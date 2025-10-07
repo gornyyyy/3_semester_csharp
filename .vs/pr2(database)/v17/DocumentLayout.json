@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gorno\\source\\repos\\3_semester_csharp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A52AC2-1347-4224-B5AB-CB1652339B47}|WindowsFormsApp\\WindowsFormsApp.csproj|c:\\users\\gorno\\source\\repos\\3_semester_csharp\\windowsformsapp\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6A52AC2-1347-4224-B5AB-CB1652339B47}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A52AC2-1347-4224-B5AB-CB1652339B47}|WindowsFormsApp\\WindowsFormsApp.csproj|c:\\users\\gorno\\source\\repos\\3_semester_csharp\\windowsformsapp\\deleteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6A52AC2-1347-4224-B5AB-CB1652339B47}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\deleteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A52AC2-1347-4224-B5AB-CB1652339B47}|WindowsFormsApp\\WindowsFormsApp.csproj|c:\\users\\gorno\\source\\repos\\3_semester_csharp\\windowsformsapp\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6A52AC2-1347-4224-B5AB-CB1652339B47}|WindowsFormsApp\\WindowsFormsApp.csproj|solutionrelative:windowsformsapp\\addform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1444FB2-B8CC-4EDE-9D43-239EDFA71BC0}|ClassLibrary1\\Model.csproj|c:\\users\\gorno\\source\\repos\\3_semester_csharp\\classlibrary1\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1444FB2-B8CC-4EDE-9D43-239EDFA71BC0}|ClassLibrary1\\Model.csproj|solutionrelative:classlibrary1\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FD4864C-863B-4D21-9FB2-B9959C65C821}|ConsoleApp\\ConsoleApp.csproj|c:\\users\\gorno\\source\\repos\\3_semester_csharp\\consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FD4864C-863B-4D21-9FB2-B9959C65C821}|ConsoleApp\\ConsoleApp.csproj|solutionrelative:consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{979D8FD7-86CE-4B10-9FA6-79D33598ACAA}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\gorno\\source\\repos\\3_semester_csharp\\businesslogic\\logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{979D8FD7-86CE-4B10-9FA6-79D33598ACAA}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\gorno\\source\\repos\\3_semester_csharp\\WindowsFormsApp\\Main.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp\\Main.cs",
+              "ToolTip": "C:\\Users\\gorno\\source\\repos\\3_semester_csharp\\WindowsFormsApp\\Main.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "WindowsFormsApp\\Main.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T20:15:40.128Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DeleteForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\gorno\\source\\repos\\3_semester_csharp\\WindowsFormsApp\\DeleteForm.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp\\DeleteForm.cs",
+              "ToolTip": "C:\\Users\\gorno\\source\\repos\\3_semester_csharp\\WindowsFormsApp\\DeleteForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "WindowsFormsApp\\DeleteForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T20:15:38.456Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\gorno\\source\\repos\\3_semester_csharp\\WindowsFormsApp\\AddForm.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp\\AddForm.cs",
+              "ToolTip": "C:\\Users\\gorno\\source\\repos\\3_semester_csharp\\WindowsFormsApp\\AddForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "WindowsFormsApp\\AddForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T20:15:36.066Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Model.cs",
+              "DocumentMoniker": "C:\\Users\\gorno\\source\\repos\\3_semester_csharp\\ClassLibrary1\\Model.cs",
+              "RelativeDocumentMoniker": "ClassLibrary1\\Model.cs",
+              "ToolTip": "C:\\Users\\gorno\\source\\repos\\3_semester_csharp\\ClassLibrary1\\Model.cs",
+              "RelativeToolTip": "ClassLibrary1\\Model.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T20:15:29.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gorno\\source\\repos\\3_semester_csharp\\ConsoleApp\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp\\Program.cs",
+              "ToolTip": "C:\\Users\\gorno\\source\\repos\\3_semester_csharp\\ConsoleApp\\Program.cs",
+              "RelativeToolTip": "ConsoleApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T20:15:21.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Logic.cs",
+              "DocumentMoniker": "C:\\Users\\gorno\\source\\repos\\3_semester_csharp\\BusinessLogic\\Logic.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Logic.cs",
+              "ToolTip": "C:\\Users\\gorno\\source\\repos\\3_semester_csharp\\BusinessLogic\\Logic.cs",
+              "RelativeToolTip": "BusinessLogic\\Logic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T20:15:18.964Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
