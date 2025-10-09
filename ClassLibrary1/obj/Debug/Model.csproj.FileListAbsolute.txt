@@ -1,6 +1,0 @@
-C:\Users\gorno\source\repos\pr2(database)\ClassLibrary1\bin\Debug\ClassLibrary1.dll
-C:\Users\gorno\source\repos\pr2(database)\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
-C:\Users\gorno\source\repos\pr2(database)\ClassLibrary1\obj\Debug\Model.csproj.AssemblyReference.cache
-C:\Users\gorno\source\repos\pr2(database)\ClassLibrary1\obj\Debug\Model.csproj.CoreCompileInputs.cache
-C:\Users\gorno\source\repos\pr2(database)\ClassLibrary1\obj\Debug\ClassLibrary1.dll
-C:\Users\gorno\source\repos\pr2(database)\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

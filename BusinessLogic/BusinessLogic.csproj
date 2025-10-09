@@ -45,8 +45,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\Model.csproj">
-      <Project>{e1444fb2-b8cc-4ede-9d43-239edfa71bc0}</Project>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{2104fc6f-c3d6-4057-bda7-4ba3bef7dfc3}</Project>
       <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
