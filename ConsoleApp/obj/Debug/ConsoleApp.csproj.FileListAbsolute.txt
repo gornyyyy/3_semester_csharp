@@ -10,3 +10,15 @@ C:\Users\gorno\source\repos\pr2(database)\ConsoleApp\obj\Debug\ConsoleApp.csproj
 C:\Users\gorno\source\repos\pr2(database)\ConsoleApp\obj\Debug\ConsoleApp.csproj.Up2Date
 C:\Users\gorno\source\repos\pr2(database)\ConsoleApp\obj\Debug\ConsoleApp.exe
 C:\Users\gorno\source\repos\pr2(database)\ConsoleApp\obj\Debug\ConsoleApp.pdb
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\ConsoleApp.exe.config
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\ConsoleApp.exe
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\ConsoleApp.pdb
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\BusinessLogic.dll
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\Model.dll
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\BusinessLogic.pdb
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\Model.pdb
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\obj\Debug\ConsoleApp.csproj.AssemblyReference.cache
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\obj\Debug\ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\obj\Debug\ConsoleApp.csproj.Up2Date
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\obj\Debug\ConsoleApp.exe
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\obj\Debug\ConsoleApp.pdb

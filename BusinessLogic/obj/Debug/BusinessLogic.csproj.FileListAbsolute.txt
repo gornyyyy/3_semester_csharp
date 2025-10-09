@@ -16,3 +16,12 @@ C:\Users\gorno\source\repos\3_semester_csharp\BusinessLogic\obj\Debug\BusinessLo
 C:\Users\gorno\source\repos\3_semester_csharp\BusinessLogic\obj\Debug\BusinessLogic.pdb
 C:\Users\gorno\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\Model.dll
 C:\Users\gorno\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\Model.pdb
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\Model.dll
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\Model.pdb
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\obj\Debug\BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\obj\Debug\Business.CF5D6E35.Up2Date
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\obj\Debug\BusinessLogic.pdb
