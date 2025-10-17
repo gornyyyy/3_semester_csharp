@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessLogic;
+using DataAccessLayer;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApp
 {

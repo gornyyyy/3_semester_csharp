@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using BusinessLogic;
+using DataAccessLayer;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApp
 {
@@ -31,17 +34,17 @@ namespace WindowsFormsApp
             string name = textBox1.Text;
             string speciality = textBox2.Text;
             string group = textBox3.Text;
-            string id = textBox4.Text;
+            string studentNumber = textBox5.Text;
 
-            if (string.IsNullOrWhiteSpace(id) || string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(speciality) || string.IsNullOrWhiteSpace(group))
+            if (string.IsNullOrWhiteSpace(studentNumber) || string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(speciality) || string.IsNullOrWhiteSpace(group))
             {
                 MessageBox.Show("Заполните все поля!!!");
                 return;
             }
             
-            if (!logic.AddStudent(name, speciality, group, Convert.ToInt16(id)))
+            if (!logic.AddStudent(name, speciality, group, studentNumber))
             {
-                MessageBox.Show("У студентов не может быть одиннаковых ID");
+                MessageBox.Show("У студентов не могут быть одинаковые номера зачетных книжек!!!");
             }
             this.Close();
 
@@ -66,5 +69,14 @@ namespace WindowsFormsApp
 
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

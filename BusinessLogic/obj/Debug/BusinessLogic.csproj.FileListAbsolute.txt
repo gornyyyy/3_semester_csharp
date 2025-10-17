@@ -25,3 +25,14 @@ C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\obj\Debug\Busines
 C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\obj\Debug\Business.CF5D6E35.Up2Date
 C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\obj\Debug\BusinessLogic.dll
 C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\obj\Debug\BusinessLogic.pdb
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\StudentDatabase.mdf
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\StudentDatabase_log.ldf
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\BusinessLogic.dll.config
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\DataAccessLayer.dll
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\EntityFramework.dll
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\DataAccessLayer.pdb
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\DataAccessLayer.dll.config
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\Model.dll.config
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\EntityFramework.xml
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml

@@ -4,6 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BusinessLogic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using DataAccessLayer;
+using System.Data.Entity;
+
 
 namespace ConsoleApp
 {
@@ -11,6 +17,8 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<Context>());
+
             Logic logic = new Logic();
 
             bool running = true;
@@ -42,18 +50,18 @@ namespace ConsoleApp
                         Console.Write("Группа: ");
                         string group = Console.ReadLine();
 
-                        Console.Write("ID: ");
-                        int id = Convert.ToInt16(Console.ReadLine());
+                        Console.Write("Номер зачетки: ");
+                        string studentNumber = Console.ReadLine();
 
                         try
                         {
-                            if (logic.AddStudent(name, speciality, group, id))
+                            if (logic.AddStudent(name, speciality, group, studentNumber))
                             {
-                                Console.WriteLine("Студент добавлен успешно!");
+                                Console.WriteLine("Студент добавлен успешно");
                             }
                             else
                             {
-                                Console.WriteLine("Нельзя добавить студентов с одиннаковым ID");
+                                Console.WriteLine("Нельзя добавить студентов с одинаковым номером зачетной книжки");
                             }
                         }
                         catch (Exception ex)
@@ -68,8 +76,24 @@ namespace ConsoleApp
                         Console.Write("Введите ID студента: ");
                         int ID = Convert.ToInt16(Console.ReadLine());
 
-                        logic.DeleteStudent(ID);
+                        try
+                        {
+                            if (logic.DeleteStudent(ID))
+                            {
+                                Console.WriteLine("Студент удален");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Возникла ошибка при попытке удаления");
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine($"Ошибка: {ex.Message}");
+                        }
                         break;
+                        //logic.DeleteStudent(ID);
+                        //break;
 
                     case "3":
                         Console.WriteLine("\n=== Список всех студентов ===");

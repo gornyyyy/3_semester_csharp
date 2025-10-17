@@ -22,3 +22,15 @@ C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\obj\Debug\ConsoleApp
 C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\obj\Debug\ConsoleApp.csproj.Up2Date
 C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\obj\Debug\ConsoleApp.exe
 C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\obj\Debug\ConsoleApp.pdb
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\obj\Debug\ConsoleApp.exe.config
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\StudentDatabase.mdf
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\StudentDatabase_log.ldf
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\DataAccessLayer.dll
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\EntityFramework.dll
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\BusinessLogic.dll.config
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\DataAccessLayer.pdb
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\DataAccessLayer.dll.config
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\EntityFramework.xml
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Даша\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\Model.dll.config
