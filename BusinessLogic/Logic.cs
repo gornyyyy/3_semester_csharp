@@ -4,20 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Model;
+using DataAccessLayer;
 
 namespace BusinessLogic
 {
     public class Logic
     {
+        IRepository<Student> repository = new RepositoryDapper<Student>();
         public List<Student> students { set; get; } = new List<Student>();
 
-        public bool AddStudent(string name, string speciality, string group, int id)
+        public bool AddStudent(string name, string speciality, string group, int studentnumber, int id)
         {
 
-            var student = new Student(name, speciality, group, id);
-            if (!string.IsNullOrWhiteSpace(name) && !(students.Any(x => x.ID == id)))
+            var student = new Student(name, speciality, group, studentnumber, id);
+            if (!string.IsNullOrWhiteSpace(name) && !(students.Any(x => x.StudentNumber == studentnumber)))
             {
                 students.Add(student); 
+                repository.Create(student);
                 return true;
             }
             return false;
