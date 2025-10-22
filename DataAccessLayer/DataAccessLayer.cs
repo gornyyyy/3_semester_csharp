@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
+using Dapper;
 
 
 namespace DataAccessLayer
@@ -76,6 +77,48 @@ public class EntityFrameworkRepository<T> : IRepository<T>
             GC.SuppressFinalize(this);
         }
     }
-    
+
+public class DapperRepository<T> : IRepository<T> where T :
+        class, IDomainObject, new()
+{
+    static string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=StudentDb;Integrated Security=True;Connect Timeout=30;";
+
+    IDbConnection db = new SqlConnection(connectionString);
+
+    public void Create(T t)
+    {
+        var sqlQuery = @"INSERT INTO Students (Name, [Group], Speciality, StudentNumber) 
+                   VALUES(@Name, @Group, @Speciality, @StudentNumber); 
+                   SELECT CAST(SCOPE_IDENTITY() as int)";
+        int studentId = db.Query<int>(sqlQuery, t).FirstOrDefault();
+        t.ID = studentId;
+
+    }
+
+    public void Delete(T t)
+    {
+        var sqlQuery = "DELETE FROM Students WHERE ID = @ID";
+        db.Execute(sqlQuery, new { ID = t.ID });
+    }
+
+    public void Save()
+    {
+
+    }
+    public T ReadById(int id)
+    {
+        return db.Query<T>("Select * From Students Where ID = " + id).FirstOrDefault();
+    }
+    public IEnumerable<T> ReadAll()
+    {
+        return db.Query<T>("SELECT * FROM Students").ToList();
+    }
+    public void Dispose()
+    {
+        db?.Dispose();
+    }
+}
+
+
 
 

@@ -14,7 +14,7 @@ namespace BusinessLogic
 {
     public class Logic
     {
-        IRepository<Student> repository = new EntityFrameworkRepository<Student>();
+        IRepository<Student> repository = new DapperRepository<Student>();
 
         public List<Student> students { set; get; } = new List<Student>();
         public Logic()
