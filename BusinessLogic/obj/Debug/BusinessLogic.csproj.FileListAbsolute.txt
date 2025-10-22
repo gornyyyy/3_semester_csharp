@@ -36,3 +36,11 @@ C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\DataAcc
 C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\Model.dll.config
 C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\EntityFramework.xml
 C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\Dapper.dll
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\Dapper.xml
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Даша\source\repos\3_semester_csharp\BusinessLogic\bin\Debug\System.Threading.Tasks.Extensions.xml

@@ -61,3 +61,11 @@ C:\Users\Даша\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\Entit
 C:\Users\Даша\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\Model.pdb
 C:\Users\Даша\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\Model.dll.config
 C:\Users\Даша\source\repos\3_semester_csharp\WindowsFormsApp\obj\Debug\WindowsF.5F5EF213.Up2Date
+C:\Users\Даша\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\Dapper.dll
+C:\Users\Даша\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Даша\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Даша\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Даша\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\Dapper.xml
+C:\Users\Даша\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Даша\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Даша\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\System.Threading.Tasks.Extensions.xml
