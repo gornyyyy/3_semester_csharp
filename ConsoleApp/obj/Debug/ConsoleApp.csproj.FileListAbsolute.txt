@@ -45,13 +45,11 @@ C:\Users\gorno\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\EntityFramewo
 C:\Users\gorno\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\gorno\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\Model.dll
 C:\Users\gorno\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\BusinessLogic.pdb
-C:\Users\gorno\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\BusinessLogic.dll.config
 C:\Users\gorno\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\DataAccessLayer.pdb
 C:\Users\gorno\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\DataAccessLayer.dll.config
 C:\Users\gorno\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\EntityFramework.xml
 C:\Users\gorno\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\gorno\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\Model.pdb
-C:\Users\gorno\source\repos\3_semester_csharp\ConsoleApp\bin\Debug\Model.dll.config
 C:\Users\gorno\source\repos\3_semester_csharp\ConsoleApp\obj\Debug\ConsoleApp.csproj.AssemblyReference.cache
 C:\Users\gorno\source\repos\3_semester_csharp\ConsoleApp\obj\Debug\ConsoleApp.csproj.CoreCompileInputs.cache
 C:\Users\gorno\source\repos\3_semester_csharp\ConsoleApp\obj\Debug\ConsoleApp.csproj.Up2Date
