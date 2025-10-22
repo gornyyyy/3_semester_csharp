@@ -10,35 +10,53 @@ namespace BusinessLogic
 {
     public class Logic
     {
-        IRepository<Student> repository = new RepositoryDapper<Student>();
+        IRepository<Student> repository = new DapperRepository<Student>();
         public List<Student> students { set; get; } = new List<Student>();
+        public Logic()
+        {
+            RefreshStudents();
+        }
 
-        public bool AddStudent(string name, string speciality, string group, int studentnumber, int id)
+        public bool AddStudent(string name, string speciality, string group, string studentNumber)
         {
 
-            var student = new Student(name, speciality, group, studentnumber, id);
-            if (!string.IsNullOrWhiteSpace(name) && !(students.Any(x => x.StudentNumber == studentnumber)))
+            var student = new Student(name, speciality, group, studentNumber);
+            if (!string.IsNullOrWhiteSpace(name) && !(students.Any(x => x.StudentNumber == studentNumber)))
             {
-                students.Add(student); 
                 repository.Create(student);
+                repository.Save();
+                RefreshStudents();
                 return true;
             }
             return false;
         }
-        public void DeleteStudent(int id)
+
+        public bool DeleteStudent(int id)
         {
-            students.RemoveAll(x => x.ID == id);
+            var student = repository.ReadById(id);
+            if (student != null)
+            {
+                repository.Delete(student);
+                repository.Save();
+                RefreshStudents();
+                return true;
+                //students.RemoveAll(x => x.ID == id);
+            }
+            return false;
         }
+
         public List<string> GetAllStudents()
         {
-            return students.Select(s => $"{s.ID} | {s.Name} | {s.Speciality} | {s.Group}").ToList();
+            return repository.ReadAll().Select(s => $"{s.ID} | {s.Name} | {s.Speciality} | {s.Group} | {s.StudentNumber}").ToList();
         }
+
         public Dictionary<string, int> GetSpecialtyDistribution()
         {
             return students
                 .GroupBy(s => s.Speciality)
                 .ToDictionary(g => g.Key, g => g.Count());
         }
+
         public void PrintSpecialityHistogram()
         {
             var histogram = GetSpecialtyDistribution();
@@ -49,5 +67,11 @@ namespace BusinessLogic
                 Console.WriteLine($"{item.Key} | {arrows}");
             }
         }
+
+        public void RefreshStudents()
+        {
+            students = repository.ReadAll().ToList();
+        }
     }
 }
+

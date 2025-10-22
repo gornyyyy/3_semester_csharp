@@ -31,15 +31,15 @@ namespace WindowsFormsApp
             string name = textBox1.Text;
             string speciality = textBox2.Text;
             string group = textBox3.Text;
-            string id = textBox4.Text;
+            string studentNumber = textBox4.Text;
 
-            if (string.IsNullOrWhiteSpace(id) || string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(speciality) || string.IsNullOrWhiteSpace(group))
+            if (string.IsNullOrWhiteSpace(studentNumber) || string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(speciality) || string.IsNullOrWhiteSpace(group))
             {
                 MessageBox.Show("Заполните все поля!!!");
                 return;
             }
             
-            if (!logic.AddStudent(name, speciality, group, Convert.ToInt16(id)))
+            if (!logic.AddStudent(name, speciality, group, studentNumber))
             {
                 MessageBox.Show("У студентов не может быть одиннаковых ID");
             }

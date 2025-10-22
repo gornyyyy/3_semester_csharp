@@ -16,8 +16,8 @@ namespace DataAccessLayer
     {
         IEnumerable<T> ReadAll();
         T ReadById(int id);
-        void Create(T book);
-        void Delete(T book);
+        void Create(T item);
+        void Delete(T item);
         void Save();
 
     }
@@ -29,11 +29,11 @@ namespace DataAccessLayer
         public DbSet<Student> Students { get; set; }
     }
 
-    public class RepositoryDapper<T> : IRepository<T> where T :
+    public class DapperRepository<T> : IRepository<T> where T :
         class, IDomainObject, new()
     {
-        static string connectionString = "Data Source=(LocalDB)+" +
-            "\\MSSQLLocalDB;AttachDbFilename=StudentDatabase.mdf;Integrated Security=True";
+        static string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=StudentDatabase;" +
+                            "Integrated Security=True;Connect Timeout=30";
 
         IDbConnection db = new SqlConnection(connectionString);
 
@@ -52,13 +52,13 @@ namespace DataAccessLayer
             db.Execute(sqlQuery, new { ID = t.ID });
         }
 
-        public void Save(T t)
+        public void Save()
         {
 
         }
-        public Student ReadById(int id)
+        public T ReadById(int id)
         {
-            return db.Query<Student>("Select * From Students Where ID = " + id).FirstOrDefault();
+            return db.Query<T>("Select * From Students Where ID = " + id).FirstOrDefault();
         }
         public IEnumerable<T> ReadAll()
         {
