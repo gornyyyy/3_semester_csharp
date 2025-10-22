@@ -17,7 +17,6 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<Context>());
 
             Logic logic = new Logic();
 

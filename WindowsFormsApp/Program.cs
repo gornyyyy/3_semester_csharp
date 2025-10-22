@@ -19,7 +19,6 @@ namespace WindowsFormsApp
         [STAThread]
         static void Main()
         {
-            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<Context>());
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
