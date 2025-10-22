@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using BusinessLogic;
+using DataAccessLayer;
 using System.Configuration;
 using System.Data.SqlClient;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp
 {
@@ -34,14 +34,14 @@ namespace WindowsFormsApp
             string name = textBox1.Text;
             string speciality = textBox2.Text;
             string group = textBox3.Text;
-            string studentNumber = textBox4.Text;
+            string studentNumber = textBox5.Text;
 
             if (string.IsNullOrWhiteSpace(studentNumber) || string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(speciality) || string.IsNullOrWhiteSpace(group))
             {
                 MessageBox.Show("Заполните все поля!!!");
                 return;
             }
-
+            
             if (!logic.AddStudent(name, speciality, group, studentNumber))
             {
                 MessageBox.Show("У студентов не могут быть одинаковые номера зачетных книжек!!!");
@@ -74,7 +74,7 @@ namespace WindowsFormsApp
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
         }

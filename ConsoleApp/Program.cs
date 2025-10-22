@@ -7,7 +7,8 @@ using BusinessLogic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-
+using DataAccessLayer;
+using System.Data.Entity;
 
 
 namespace ConsoleApp
@@ -16,6 +17,7 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<Context>());
 
             Logic logic = new Logic();
 
@@ -90,11 +92,12 @@ namespace ConsoleApp
                             Console.WriteLine($"Ошибка: {ex.Message}");
                         }
                         break;
-                    //logic.DeleteStudent(ID);
-                    //break;
+                        //logic.DeleteStudent(ID);
+                        //break;
 
                     case "3":
                         Console.WriteLine("\n=== Список всех студентов ===");
+                        Console.WriteLine(" ID | Name            | Speciality           | Group    | Number");
 
                         var students = logic.GetAllStudents();
                         foreach (var student in students)

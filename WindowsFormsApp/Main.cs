@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessLogic;
+using DataAccessLayer;
+using System.Data.Entity;
 using System.Data.SqlClient;
 using System.Configuration;
 

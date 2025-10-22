@@ -47,7 +47,8 @@ namespace BusinessLogic
 
         public List<string> GetAllStudents()
         {
-            return repository.ReadAll().Select(s => $"{s.ID} | {s.Name} | {s.Speciality} | {s.Group} | {s.StudentNumber}").ToList();
+            return repository.ReadAll().Select(s =>
+        $"{s.ID.ToString().PadLeft(3)} | {s.Name.PadRight(15)} | {s.Speciality.PadRight(20)} | {s.Group.PadRight(8)} | {s.StudentNumber.ToString().PadLeft(6)}").ToList();
         }
 
         public Dictionary<string, int> GetSpecialtyDistribution()
