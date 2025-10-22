@@ -47,3 +47,5 @@ C:\Users\gorno\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\Dapper.x
 C:\Users\gorno\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 C:\Users\gorno\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\gorno\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\gorno\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\BusinessLogic.dll.config
+C:\Users\gorno\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\Model.dll.config

@@ -69,11 +69,12 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(224, 282);
+            this.label4.Location = new System.Drawing.Point(189, 276);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 25);
+            this.label4.Size = new System.Drawing.Size(161, 25);
             this.label4.TabIndex = 3;
-            this.label4.Text = "ID";
+            this.label4.Text = "StudentNumber";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox1
             // 

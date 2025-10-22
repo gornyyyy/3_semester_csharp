@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessLogic;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace WindowsFormsApp
 {
@@ -43,9 +45,9 @@ namespace WindowsFormsApp
             foreach (var line in logic.GetAllStudents())
             {
                 var parts = line.Split('|');
-                if (parts.Length == 4)
+                if (parts.Length == 5)
                 {
-                    dataGridView1.Rows.Add(parts[0], parts[1], parts[2], parts[3]);
+                    dataGridView1.Rows.Add(parts[0], parts[1], parts[2], parts[3], parts[4]);
                 }
             }
         }

@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using BusinessLogic;
+using System.Configuration;
+using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp
 {
@@ -38,10 +41,10 @@ namespace WindowsFormsApp
                 MessageBox.Show("Заполните все поля!!!");
                 return;
             }
-            
+
             if (!logic.AddStudent(name, speciality, group, studentNumber))
             {
-                MessageBox.Show("У студентов не может быть одиннаковых ID");
+                MessageBox.Show("У студентов не могут быть одинаковые номера зачетных книжек!!!");
             }
             this.Close();
 
@@ -66,5 +69,14 @@ namespace WindowsFormsApp
 
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
