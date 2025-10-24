@@ -94,7 +94,3 @@ namespace DataAccessLayer
             return db.Query<T>("SELECT * FROM Students").ToList();
         }
     }
-
-
-
-
