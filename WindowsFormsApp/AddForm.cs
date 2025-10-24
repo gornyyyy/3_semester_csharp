@@ -44,7 +44,7 @@ namespace WindowsFormsApp
             
             if (!logic.AddStudent(name, speciality, group, studentNumber))
             {
-                MessageBox.Show("У студентов не могут быть одинаковые номера зачетных книжек!!!");
+                MessageBox.Show("Не удалось добавить студента :(");
             }
             this.Close();
 

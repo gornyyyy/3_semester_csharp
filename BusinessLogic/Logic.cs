@@ -14,7 +14,7 @@ namespace BusinessLogic
 {
     public class Logic
     {
-        IRepository<Student> repository = new DapperRepository<Student>();
+        IRepository<Student> repository = new EntityFrameworkRepository<Student>();
 
         public List<Student> students { set; get; } = new List<Student>();
         public Logic()
@@ -26,10 +26,9 @@ namespace BusinessLogic
         {
 
             var student = new Student(name, speciality, group, studentNumber);
-            if (!string.IsNullOrWhiteSpace(name) && !(students.Any(x => x.StudentNumber == studentNumber)))
+            if (!string.IsNullOrWhiteSpace(studentNumber) && !(students.Any(x => x.StudentNumber == studentNumber)))
             {
                 repository.Create(student);
-                repository.Save();
                 RefreshStudents();
                 return true;
             }
@@ -41,16 +40,15 @@ namespace BusinessLogic
             if (student != null)
             {
                 repository.Delete(student);
-                repository.Save();
                 RefreshStudents();
                 return true;
-                //students.RemoveAll(x => x.ID == id);
             }
             return false;
         }
         public List<string> GetAllStudents()
         {
-            return repository.ReadAll().Select(s => $"{s.ID} | {s.Name} | {s.Speciality} | {s.Group} | {s.StudentNumber}").ToList();
+            return repository.ReadAll().Select(s =>
+            $"{s.ID.ToString().PadLeft(3)} | {s.Name.PadRight(15)} | {s.Speciality.PadRight(20)} | {s.Group.PadRight(8)} | {s.StudentNumber.ToString().PadLeft(6)}").ToList();
         }
         public Dictionary<string, int> GetSpecialtyDistribution()
         {
@@ -65,7 +63,8 @@ namespace BusinessLogic
             foreach (var item in histogram)
             {
                 string arrows = new string('>', item.Value);
-                Console.WriteLine($"{item.Key} | {arrows}");
+                string specialty = item.Key;
+                Console.WriteLine($"{(specialty).PadRight(10, ' ')} | {arrows}");
             }
         }
         public void RefreshStudents()

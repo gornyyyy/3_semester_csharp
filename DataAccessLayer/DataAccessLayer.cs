@@ -14,26 +14,24 @@ using Dapper;
 
 namespace DataAccessLayer
 {
-    public interface IRepository<T> : IDisposable
+    public interface IRepository<T>
         where T : class
     {
         IEnumerable<T> ReadAll();
         T ReadById(int id);
         void Create(T item);
         void Delete(T item);
-        void Save();
-
     }
 }
     public class Context : DbContext
     {
         public Context() : base("name=StudentDbConnection") { }
-        public DbSet<Student> Students { get; set; } //доступ к данным таблицы
+        public DbSet<Student> Students { get; set; }
     }
 
 
-public class EntityFrameworkRepository<T> : IRepository<T>
-    where T : class, IDomainObject, new()
+    public class EntityFrameworkRepository<T> : IRepository<T>
+        where T : class, IDomainObject, new()
     {
         public Context _context;
         public DbSet<T> _dbSet;
@@ -57,67 +55,45 @@ public class EntityFrameworkRepository<T> : IRepository<T>
         public void Create(T obj)
         {
             _dbSet.Add(obj);
-            Save();
+            _context.SaveChanges();
         }
 
         public void Delete(T obj)
         {
             _dbSet.Remove(obj);
-            Save();
-        }
-
-        public void Save()
-        {
             _context.SaveChanges();
-        }
-
-        public void Dispose()
-        {
-            _context?.Dispose();
-            GC.SuppressFinalize(this);
         }
     }
 
-public class DapperRepository<T> : IRepository<T> where T :
-        class, IDomainObject, new()
-{
-    static string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=StudentDb;Integrated Security=True;Connect Timeout=30;";
-
-    IDbConnection db = new SqlConnection(connectionString);
-
-    public void Create(T t)
+    public class DapperRepository<T> : IRepository<T> 
+        where T : class, IDomainObject, new()
     {
+        static string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=StudentDb;Integrated Security=True;Connect Timeout=30;";
+        IDbConnection db = new SqlConnection(connectionString);
+
+        public void Create(T t)
+        {
         var sqlQuery = @"INSERT INTO Students (Name, [Group], Speciality, StudentNumber) 
                    VALUES(@Name, @Group, @Speciality, @StudentNumber); 
                    SELECT CAST(SCOPE_IDENTITY() as int)";
         int studentId = db.Query<int>(sqlQuery, t).FirstOrDefault();
         t.ID = studentId;
 
+        }
+        public void Delete(T t)
+        {
+            var sqlQuery = "DELETE FROM Students WHERE ID = @ID";
+            db.Execute(sqlQuery, new { ID = t.ID });
+        }
+        public T ReadById(int id)
+        {
+            return db.Query<T>("Select * From Students Where ID = " + id).FirstOrDefault();
+        }
+        public IEnumerable<T> ReadAll()
+        {
+            return db.Query<T>("SELECT * FROM Students").ToList();
+        }
     }
-
-    public void Delete(T t)
-    {
-        var sqlQuery = "DELETE FROM Students WHERE ID = @ID";
-        db.Execute(sqlQuery, new { ID = t.ID });
-    }
-
-    public void Save()
-    {
-
-    }
-    public T ReadById(int id)
-    {
-        return db.Query<T>("Select * From Students Where ID = " + id).FirstOrDefault();
-    }
-    public IEnumerable<T> ReadAll()
-    {
-        return db.Query<T>("SELECT * FROM Students").ToList();
-    }
-    public void Dispose()
-    {
-        db?.Dispose();
-    }
-}
 
 
 
