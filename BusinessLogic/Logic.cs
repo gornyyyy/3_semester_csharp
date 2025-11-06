@@ -8,17 +8,20 @@ using DataAccessLayer;
 using System.Data.Entity;
 using System.Data.SqlClient;
 using System.Configuration;
+using Ninject;
+using Ninject.Modules;
 
 
 namespace BusinessLogic
 {
     public class Logic
     {
-        IRepository<Student> repository = new EntityFrameworkRepository<Student>();
+        public IRepository<Student> Repository { get; set; }
 
         public List<Student> students { set; get; } = new List<Student>();
-        public Logic()
+        public Logic(IRepository<Student> repository)
         {
+            Repository = repository;
             RefreshStudents();
         }
 
@@ -28,7 +31,7 @@ namespace BusinessLogic
             var student = new Student(name, speciality, group, studentNumber);
             if (!string.IsNullOrWhiteSpace(studentNumber) && !(students.Any(x => x.StudentNumber == studentNumber)))
             {
-                repository.Create(student);
+                Repository.Create(student);
                 RefreshStudents();
                 return true;
             }
@@ -36,10 +39,10 @@ namespace BusinessLogic
         }
         public bool DeleteStudent(int id)
         {
-            var student = repository.ReadById(id);
+            var student = Repository.ReadById(id);
             if (student != null)
             {
-                repository.Delete(student);
+                Repository.Delete(student);
                 RefreshStudents();
                 return true;
             }
@@ -47,7 +50,7 @@ namespace BusinessLogic
         }
         public List<string> GetAllStudents()
         {
-            return repository.ReadAll().Select(s =>
+            return Repository.ReadAll().Select(s =>
             $"{s.ID.ToString().PadLeft(3)} | {s.Name.PadRight(15)} | {s.Speciality.PadRight(20)} | {s.Group.PadRight(8)} | {s.StudentNumber.ToString().PadLeft(6)}").ToList();
         }
         public Dictionary<string, int> GetSpecialtyDistribution()
@@ -69,7 +72,15 @@ namespace BusinessLogic
         }
         public void RefreshStudents()
         {
-            students = repository.ReadAll().ToList();
+            students = Repository.ReadAll().ToList();
+        }
+        public class SimpleConfigModule : NinjectModule
+        {
+            public override void Load()
+            {
+                Bind<IRepository<Student>>().To<EntityFrameworkRepository<Student>>().
+                    InSingletonScope();
+            }
         }
     }
 }

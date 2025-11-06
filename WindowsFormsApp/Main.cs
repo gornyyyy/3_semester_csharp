@@ -1,26 +1,32 @@
-﻿using System;
+﻿using BusinessLogic;
+using DataAccessLayer;
+using Ninject;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.Entity;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BusinessLogic;
-using DataAccessLayer;
-using System.Data.Entity;
-using System.Data.SqlClient;
-using System.Configuration;
+using static BusinessLogic.Logic;
 
 namespace WindowsFormsApp
 {
     public partial class Main : Form
     {
-        private Logic logic = new Logic();
+        private IKernel ninjectKernel;
+        private Logic logic;
+ 
         public Main()
         {
             InitializeComponent();
+            ninjectKernel = new StandardKernel(new SimpleConfigModule());
+            logic = ninjectKernel.Get<Logic>();
         }
 
         private void Form1_Load(object sender, EventArgs e)

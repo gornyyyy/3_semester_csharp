@@ -69,3 +69,5 @@ C:\Users\Даша\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\Micro
 C:\Users\Даша\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Даша\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Даша\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\BusinessLogic.dll.config
+C:\Users\Даша\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\Ninject.dll
+C:\Users\Даша\source\repos\3_semester_csharp\WindowsFormsApp\bin\Debug\Ninject.xml

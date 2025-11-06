@@ -1,14 +1,16 @@
-﻿using System;
+﻿using BusinessLogic;
+using DataAccessLayer;
+using Ninject;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.Entity;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BusinessLogic;
-using System.Configuration;
-using System.Data;
-using System.Data.SqlClient;
-using DataAccessLayer;
-using System.Data.Entity;
+using static BusinessLogic.Logic;
 
 
 namespace ConsoleApp
@@ -17,8 +19,8 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-
-            Logic logic = new Logic();
+            IKernel ninjectKernel = new StandardKernel(new SimpleConfigModule());
+            Logic logic = ninjectKernel.Get<Logic>();
 
             bool running = true;
 
